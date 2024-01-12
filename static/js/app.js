@@ -92,6 +92,7 @@ d3.json(bellyButton).then(function(data) {
     let wf = currentSample[0].wfreq;
     
     let panel = d3.select("#sample-metadata")
+    panel.html("")
     panel.append("h5").text(`id: ${subject}`)
     panel.append("h5").text(`ethnicity: ${eth}`)
     panel.append("h5").text(`gender: ${gend}`)
